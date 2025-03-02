@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dining Room</title>
+    <style>
+        html,
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:indigo;
+            /* Deep purple background color */
+            color: white;
+            /* Text color */
+            height: 80%;
+            /* Ensure full viewport height */
+        }
+
+        h1 {
+            padding-top: 10px;
+            /* Reduced top padding */
+            padding-bottom: 10px;
+            /* Reduced bottom padding */
+            text-align: center;
+            /* Center the heading */
+            margin-top: 0;
+            /* Remove default margin */
+            margin-bottom: 20px;
+            /* Add space below the heading */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            /* Center items horizontally */
+            align-items: flex-start;
+            /* Align items to the top */
+            height: 100%;
+            /* Ensure full viewport height */
+            padding: 20px;
+            /* Add padding for spacing */
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            /* Adjust margin between containers */
+        }
+
+        .room-card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            /* Ensure room-card takes full width */
+            max-width: 800px;
+            /* Limit card width */
+        }
+
+        .room-card img {
+            padding: 10px;
+            height: 300px;
+            width: auto;
+            min-height: 200px;
+            flex: 0 0 auto;
+            /* Ensure image size does not grow or shrink */
+        }
+
+        .room-info {
+            padding: 20px;
+            flex: 1;
+            /* Take up remaining space */
+        }
+
+        .room-info h2,
+        .room-info h3 {
+            margin: 10px 0;
+            color: black;
+        }
+
+        .room-info p {
+            margin: 10px 0;
+            color: black;
+        }
+
+        .room-info button {
+            background-color: #8c58b3;
+            /* Dark purple button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            /* Make button full width */
+        }
+
+        .room-info button:hover {
+            background-color: #6b3fa0;
+            /* Darker shade on hover */
+        }
+
+        /* Adjust positioning */
+        .first-card {
+            margin-right: auto;
+            /* Move first card to the left */
+        }
+
+        .second-card {
+            margin-left: auto;
+            /* Keep second card in default order (right) */
+        }
+
+        .third-card {
+            margin-right: auto;
+            /* Move third card to the left */
+        }
+        .four-card{
+            margin-left: auto;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WELCOME TO OUR DINING</h1>
+
+    <div class="container">
+        <div class="room-card first-card">
+            <img src="./signature.jpg" alt="Signature Dining" />
+            <div class="room-info">
+                <h2>Signature Dining</h2>
+                <h3>&#8377;599.00</h3>
+                <p>A signature restaurant offers a unique and upscale dining experience with gourmet cuisine crafted by
+                    renowned chefs. It features a distinctive theme and elegant ambiance, using premium ingredients and
+                    innovative culinary techniques.
+                </p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="room-card second-card">
+            <img src="./casual1.jpg" alt="Casual Dining" />
+            <div class="room-info">
+                <h2>Casual Dining</h2>
+                <h3>&#8377;699.00</h3>
+                <p>Casual dining typically offers a relaxed atmosphere and a diverse menu suited for everyday meals. It
+                    emphasizes comfort and accessibility, often featuring a variety of cuisines in a laid-back setting.
+                    Patrons can enjoy quality food without the formality of fine dining, making it a popular choice for
+                    casual outings and social gatherings. </p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="room-card third-card">
+            <img src="./cafe.jpg" alt="Cafe/Bistro Dining" />
+            <div class="room-info">
+                <h2>Cafe/Bistro Dining</h2>
+                <h3>&#8377;899.00</h3>
+                <p>A Cafe or Bistro is a cozy eatery offering casual dining with a focus on simple yet delicious meals
+                    and beverages. Typically known for their relaxed ambiance, cafes often serve freshly brewed coffee,
+                    pastries, sandwiches, and light meals throughout the day. They provide a comfortable setting for
+                    patrons to unwind, socialize, or work, making them popular spots for both locals and visitors
+                    alike.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="room-card fourth-card">
+            <img src="./special.jpg" alt="Cafe/Bistro Dining" />
+            <div class="room-info">
+                <h2>Speciality Dining</h2>
+                <h3>&#8377;999.00</h3>
+                <p>Specialty dining offers exclusive culinary experiences with unique menus curated by expert chefs,
+                    emphasizing premium ingredients and innovative cooking techniques. It provides a sophisticated
+                    ambiance tailored for discerning diners seeking exceptional flavors and impeccable service, making
+                    it ideal for memorable dining occasions and celebrations.
+                </p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

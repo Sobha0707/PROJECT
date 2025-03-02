@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html, body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: navy; /* Navy blue background color */
+            color: white;
+            height: 100%; /* Ensure full viewport height */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px; /* Add padding around the container */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        .room-card {
+            flex: 1 1 300px;
+            padding: 10px;
+            text-align: center;
+            background-color: black; /* Dark background color for cards */
+            border-radius: 10px;
+        }
+
+        .room-card img {
+            height: 300px;
+            min-height: 200px;
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 10px 10px 0 0; /* Rounded corners for top of image */
+        }
+
+        h1 {
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: center; /* Center align heading */
+        }
+
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+    <title>Hotel Rooms</title>
+</head>
+
+<body>
+    <h1>Hotel Rooms</h1>
+    <div class="container">
+        <div class="room-card">
+            <img src="./room3.jpg" alt="Standard Room" />
+            <h2>Standard Room</h2>
+            <h3>&#8377;599.00</h3>
+            <h4>&#x1F6CC; 3 Beds</h4> <!-- Bed symbol and bed count -->
+        </div>
+        <div class="room-card">
+            <img src="./Room1.jpg" alt="Comfort Room" />
+            <h2>Comfort Room</h2>
+            <h3>&#8377;799.00</h3>
+            <h4>&#x1F6CC; 2 Beds</h4> <!-- Bed symbol and bed count -->
+        </div>
+        <div class="room-card">
+            <img src="./luxury.jpg" alt="Luxury Room" />
+            <h2>Luxury Room</h2>
+            <h3>&#8377;999.00</h3>
+            <h4>&#x1F6CC; 1 Bed</h4><!-- Bed symbol and bed count -->
+        </div>
+        <div class="room-card">
+            <img src="./deluxe.jpg" alt="Deluxe Room" />
+            <h2>Grand Deluxe Room</h2>
+            <h3>&#8377;1199.00</h3>
+            <h4>&#x1F6CC; 2 Beds</h4><!-- Bed symbol and bed count -->
+        </div>
+        <div class="room-card">
+            <img src="./apartments.jpg" alt="Apartment Room" />
+            <h2>Apartment Room</h2>
+            <h3>&#8377;1599</h3>
+            <h4>&#x1F6CC; 1 Bed</h4><!-- Bed symbol and bed count -->
+        </div>
+        <div class="room-card">
+            <img src="./modern.jpg" alt="Modern Room" />
+            <h2>Modern Room</h2>
+            <h3>&#8377;1999</h3>
+            <h4>&#x1F6CC; 1 Bed</h4><!-- Bed symbol and bed count -->
+        </div>
+    </div>
+</body>
+
+</html
